@@ -1,10 +1,10 @@
-ServerRoot "<%= ENV['OPENSHIFT_WEBRATIO_DIR'] %>"
+ServerRoot "<%= ENV['OPENSHIFT_WEBRATIOAPP_DIR'] %>"
 DocumentRoot "<%= "#{ENV['OPENSHIFT_REPO_DIR']}/diy" %>"
-Listen <%= "#{ENV['OPENSHIFT_DIY_IP']}:#{ENV['OPENSHIFT_WEBRATIO_PORT']}" %>
+Listen <%= "#{ENV['OPENSHIFT_DIY_IP']}:#{ENV['OPENSHIFT_WEBRATIOAPP_PORT']}" %>
 User <%= ENV['OPENSHIFT_GEAR_UUID'] %>
 Group <%= ENV['OPENSHIFT_GEAR_UUID'] %>
-ErrorLog "<%= "|/usr/sbin/rotatelogs #{ENV['OPENSHIFT_WEBRATIO_DIR']}/logs/error_log-%Y%m%d-%H%M%S-%Z 86400" %>"
-CustomLog "<%= "|/usr/sbin/rotatelogs #{ENV['OPENSHIFT_WEBRATIO_DIR']}/logs/access_log-%Y%m%d-%H%M%S-%Z 86400" %>" combined
+ErrorLog "<%= "|/usr/sbin/rotatelogs #{ENV['OPENSHIFT_WEBRATIOAPP_DIR']}/logs/error_log-%Y%m%d-%H%M%S-%Z 86400" %>"
+CustomLog "<%= "|/usr/sbin/rotatelogs #{ENV['OPENSHIFT_WEBRATIOAPP_DIR']}/logs/access_log-%Y%m%d-%H%M%S-%Z 86400" %>" combined
 
 <Directory "<%= "#{ENV['OPENSHIFT_REPO_DIR']}/diy" %>">
   AllowOverride All

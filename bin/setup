@@ -8,7 +8,7 @@ case "$1" in
 esac
 
 # Create additional directories required by the WebRatio application cartridge
-mkdir -p ${OPENSHIFT_WEBRATIO_DIR}run
+mkdir -p ${OPENSHIFT_WEBRATIOAPP_DIR}run
 cd $OPENSHIFT_DATA_DIR
 client_result "installing tomcat"
 wget http://apache.fastbull.org/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz
