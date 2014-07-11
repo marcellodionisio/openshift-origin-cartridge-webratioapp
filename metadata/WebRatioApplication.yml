@@ -16,7 +16,7 @@ Help-Topics:
   Getting Started: https://www.openshift.com/videos/getting-started-with-diy-applications-on-openshift
 Provides:
 Publishes: 
-Source-Url: http://downloads.webratio.com/misc/cloud/Openshift/WebRatioApplication.zip
+Source-Url: https://github.com/marcellodionisiowr/openshift-origin-cartridge-webratioapp/archive/master.zip
 Subscribes:
   set-env:
     Type: ENV:*
