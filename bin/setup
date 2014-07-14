@@ -24,6 +24,8 @@ rm -rf server.xml
 cd ../bin
 rm -rf catalina.sh
 cd ${OPENSHIFT_DATA_DIR}tomcat/bin
+mv ${OPENSHIFT_REPO_DIR}/wr/catalina.sh $OPENSHIFT_DATA_DIR/tomcat/bin
+chmod 775 catalina.sh
 chmod 775 startup.sh
 chmod 775 shutdown.sh
 
