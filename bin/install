@@ -1,4 +1,0 @@
-cd ${OPENSHIFT_REPO_DIR}wr
-mv catalina.sh ${OPENSHIFT_DATA_DIR}tomcat/bin
-cd ${OPENSHIFT_DATA_DIR}tomcat/bin
-chmod 775 catalina.sh
